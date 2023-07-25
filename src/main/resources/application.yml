@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/metadb
+    username: root
+    password: root1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
